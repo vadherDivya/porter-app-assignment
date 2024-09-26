@@ -3,7 +3,7 @@ const UserService = require("../Service/User/UserService");
 module.exports.handleSocketEvents = async(socket) => {
   try {
       socket.on('updateUserRealtimeLocation', async(data, userId) => {
-          const realTimeData = await UserService.updateUserRealTimeLocation(data, userId);
+          const realTimeData = await UserService.updateUserRealTimeLocation(data);
           socket.emit('updateUserRealtimeLocation', realTimeData);
       });
 
