@@ -1,0 +1,9 @@
+module.exports = {
+    RIDE_STATUS_ENUM: [ "REQUESTED", "ACCEPTED", "IN-PROGRESS", "COMPLETED"],
+    RIDE_STATUS: {
+        REQUESTED: "REQUESTED",
+        ACCEPTED: "ACCEPTED",
+        INPROGRESS: "IN-PROGRESS",
+        COMPLETED: "COMPLETED"
+    },
+}
